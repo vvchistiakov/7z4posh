@@ -1,3 +1,4 @@
+New-Variable -Name zbin -Scope script;
 $root = Split-Path -Path $MyInvocation.MyCommand.Path -Parent
 
 New-Variable -Name zbin -Scope script;
