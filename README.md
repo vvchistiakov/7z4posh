@@ -1,2 +1,11 @@
 # 7z4posh
-Попытка вынести модуль в отдельный проект из  https://github.com/vvchistiakov/PoSh.git
+Оболочка для архиватора 7zip.
+Modules/7z4posh from project https://github.com/vvchistiakov/PoSh.git
+
+cmdlets:
+Invoke-Executable
+Create-7zipper
+Benchmark-7z
+List-7z
+Test-7z
+Extract-7z
