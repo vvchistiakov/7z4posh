@@ -8,55 +8,61 @@
 
 @{
 
-# Script module or binary module file associated with this manifest.
-# RootModule = 'Module.psd1'
-ModuleToProcess = '7z4posh.psm1'
+  # Script module or binary module file associated with this manifest.
+  # RootModule = 'Module.psd1'
 
-# Version number of this module.
-ModuleVersion = '0.2'
+  # Version number of this module.
+  ModuleVersion = '0.3'
 
-# ID used to uniquely identify this module
-GUID = 'bd4390dc-a8ad-4bce-8d69-f53ccf8e4163'
+  # ID used to uniquely identify this module
+  GUID = 'bd4390dc-a8ad-4bce-8d69-f53ccf8e4163'
 
-# Author of this module
-Author = 'V.Chistyakov'
+  # Author of this module
+  Author = 'V.Chistiakov'
 
-# Company or vendor of this module
-CompanyName = 'NA'
+  # Company or vendor of this module
+  CompanyName = 'NA'
 
-# Copyright statement for this module
-Copyright = '(c) 2016 V.Chistyakov. All rights reserved.'
+  # Copyright statement for this module
+  Copyright = '(c) 2016 V.Chistyakov. All rights reserved.'
 
-# Description of the functionality provided by this module
-# Description = ''
+  # Description of the functionality provided by this module
+  # Description = ''
 
-# Minimum version of the Windows PowerShell engine required by this module
-PowerShellVersion = '3.0'
+  # Minimum version of the Windows PowerShell engine required by this module
+  PowerShellVersion = '5.0'
 
-# Functions to export from this module
-FunctionsToExport = @('Create-7zipper', 'Benchmark-7z', 'List-7z', 'Test-7z', 'Extract-7z')
+  # Modules to import as nested modules of the module specified in RootModule/ModuleToProcess
+  NestedModules = @(
+    'Invoke-Executable.psm1',
+    '7z4posh.psm1'
+  )
 
-# Cmdlets to export from this module
-# CmdletsToExport = '*'
+  # Functions to export from this module
+  FunctionsToExport = '*'
 
-# Variables to export from this module
-# VariablesToExport = '*'
+  # Cmdlets to export from this module
+  CmdletsToExport = '*'
 
-# Aliases to export from this module
-# AliasesToExport = '*'
+  # Variables to export from this module
+  VariablesToExport = '*'
 
-# List of all modules packaged with this module
-# ModuleList = @()
+  # Aliases to export from this module
+  AliasesToExport = '*'
 
-# List of all files packaged with this module
-# FileList = @()
+  # List of all modules packaged with this module
+  # ModuleList = @()
 
-# Private data to pass to the module specified in RootModule/ModuleToProcess
-# PrivateData = ''
+  # List of all files packaged with this module
+  # FileList = @()
 
-# HelpInfo URI of this module
-# HelpInfoURI = ''
+  # Private data to pass to the module specified in RootModule/ModuleToProcess
+  # PrivateData = ''
 
-# Default prefix for commands exported from this module. Override the default prefix using Import-Module -Prefix.
-# DefaultCommandPrefix = ''
+  # HelpInfo URI of this module
+  # HelpInfoURI = ''
+
+  # Default prefix for commands exported from this module. Override the default prefix using Import-Module -Prefix.
+  # DefaultCommandPrefix = ''
+
 }
